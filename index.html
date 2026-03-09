@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rắn Săn Mồi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>Rắn săn mồi</h1>
+      <div class="stats">
+        <div>Điểm: <span id="score">0</span></div>
+        <div>Kỷ lục: <span id="best">0</span></div>
+        <div>Tốc độ: <span id="speed">1x</span></div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <canvas id="game" width="480" height="480" aria-label="Snake game" role="img"></canvas>
+      <div class="side">
+        <div class="controls">
+          <button id="btnStart" class="primary">Chơi / Tạm dừng (Space)</button>
+          <button id="btnRestart">Chơi lại (R)</button>
+        </div>
+
+        <div class="help">
+          <h2>Hướng dẫn</h2>
+          <ul>
+            <li>Di chuyển: ↑ ↓ ← → hoặc WASD</li>
+            <li>Tạm dừng: Space</li>
+            <li>Chơi lại: R</li>
+          </ul>
+          <p class="note">Mẹo: ăn càng nhiều thì tốc độ tăng dần.</p>
+        </div>
+
+        <div class="footer">
+          <a href="https://github.com/ngothanhnam0910/snake-game-vercel" target="_blank" rel="noreferrer">Source (GitHub)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
